@@ -1,0 +1,23 @@
+# .mlrc to control pytest-ml
+[run]
+metrics = accuracy_score, recall_score
+data = extras/test.csv
+loader = joblib
+model = mdl.joblib
+
+
+[report]
+failure = 0
+report = console
+
+
+# [report]
+# Regexes for lines to exclude from consideration
+# exclude_lines =
+    # Don't complain about missing debug-only code:
+
+# ignore_errors = True
+
+
+# [html]
+# directory = coverage_html_report
